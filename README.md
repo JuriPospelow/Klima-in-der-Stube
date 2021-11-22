@@ -10,7 +10,7 @@ Raspberry Pi 4B 2GB, SD card: 32GB
 OS: Raspberry Pi OS (32-bit, Desktop Version)
 
 Durch die Verwendung eines Webservers ist es möglich, die aktuellen Sensorwerte von jedem beliebigen Gerät im Netzwerk abzurufen.
-Über das Display können die Daten am Standort der Sensoren abgelesen werden.
+Mithilfe des Displays können die Daten am Standort der Sensoren abgelesen werden.
 
 |Übersicht| nur LCD | Laptop |
 | ------ | ------- | ------- |
