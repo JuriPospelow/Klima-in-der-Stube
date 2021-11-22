@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Klima in der Stube</title>
+    <script src="sensor.js"></script>
+    <link rel='stylesheet' href='style.css'>
+  </head>
+  <body>
+    <div class="container">
+      <p class='time' id="time"></p>
+    <div class="container">
+      <h2>Luft</h2>
+      <div class='sensor-container' id="containerS1">
+          <div class='sensor-label'>S1 Temperatur</div>
+          <div class='pm-label' id="T"></div>
+      </div>
+      <div class='sensor-container' id="containerS2">
+          <div class='sensor-label'>S2 Druck</div>
+          <div class='pm-label' id="P"></div>
+      </div>
+    </div>
+    <div class="container">
+      <h2>------------------------</h2>
+    </div>
+    <div class="container">
+      <h2>Luftpartikel</h2>
+      <div class='aqi-container' id="containerPm25">
+          <div class='aqi-label'>AQI (PM2.5)</div>
+          <div class='aqi' id="aqiPm25"></div>
+          <div class='pm-label' id="pm25"></div>
+      </div>
+      <div class='aqi-container' id="containerPm10">
+          <div class='aqi-label'>AQI (PM10)</div>
+          <div class='aqi' id="aqiPm10"></div>
+          <div class='pm-label' id="pm10"></div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    getData();
+    setInterval(getData, 300);
+  </script>
+</html>
